@@ -15,7 +15,7 @@
     <nav class="navbar navbar-expand-md shodow-lg fixed-top">
         <div class="container-fluid">
         <img src="./common/images/hotelLogo.jpg" class="rounded-circle" width="60px" alt="">
-          <a class="navbar-brand text-white" href="#">Management System</a>
+          <a class="mx-2 navbar-brand text-white" href="#">Management System</a>
           <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"><i class=" text-white fa-solid fa-bars "></i></span>
           </button>
@@ -44,16 +44,16 @@
                 <!-- nav-tab -->
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
-                      <a class="nav-link active" href="#signup"  data-bs-toggle="tab">Signup</a>
+                      <a class="nav-link" href="#signup"  data-bs-toggle="tab">Signup</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" data-bs-toggle="tab" href="#login">Login</a>
+                      <a class="nav-link active" data-bs-toggle="tab" href="#login">Login</a>
                     </li>
                   </ul>  
                
                 <!-- nav-panes -->
                   <div class="tab-content">
-                    <div class="tab-pane active container mt-3" id="signup">
+                    <div class="tab-pane  container mt-3" id="signup">
                         <form class="reg-form">
                             <input name="fullname" type="text" placeholder="Fullname" class="form-control mb-3">
                             <input name="hotelName" type="text" placeholder="Hotel Name" class="form-control mb-3">
@@ -61,13 +61,13 @@
                             <input name="email" type="Email" placeholder="Email" class="form-control mb-3">
                             <input name="password" type="Password" placeholder="Password" class="form-control mb-3">
                             <input name="number" type="number" placeholder="Mobile Number" class="form-control mb-3">
-                            <button type="submit" class="btn btn-primary w-100">Submit</button>
+                            <button type="submit" class="btn btn-primary w-100">Register</button>
                         </form>
                     </div>
-                    <div class="tab-pane  container mt-3" id="login">
+                    <div class="tab-pane active container mt-3" id="login">
                         <form class="login-from">
-                            <input type="Email" placeholder="Email" class="form-control mb-3">
-                            <input type="Password" placeholder="Password" class="form-control mb-3">
+                            <input required type="Email" placeholder="Email" class="form-control mb-3">
+                            <input required type="Password" placeholder="Password" class="form-control mb-3">
                             <button type="submit" class="btn btn-primary w-100">Login</button>
                         </form>
                     </div>

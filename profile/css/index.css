@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.navbar{
+    background-image: linear-gradient(#2a2a2a,#c6c8c5);
+}
+.nav-item{
+    font-size : 22px !important
+}
+.btn{
+    background-image: linear-gradient(#2a2a2a,#c6c8c5);
+    border: none !important;
+    box-shadow: none !important;
+    font-size: 22px !important;
+}
