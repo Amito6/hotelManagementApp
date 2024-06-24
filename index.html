@@ -12,11 +12,70 @@
     <title>Hotel Management System</title>
 </head>
 <body>
-    <div class="container">
-        <h1 class="text-success animate__animated animate__bounce animate__infinite">Hotel Management System</h1>
-        <div class="flex-column">
-            <i class="fa fa-home text-info">&nbsp;Home</i>
-            <i class="fa fa-edit text-danger">&nbsp;trash</i>
+    <nav class="navbar navbar-expand-md shodow-lg fixed-top">
+        <div class="container-fluid">
+        <img src="./common/images/hotelLogo.jpg" class="rounded-circle" width="60px" alt="">
+          <a class="mx-4 navbar-brand text-white" href="#">Hotel Management System</a>
+          <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"><i class=" text-white fa-solid fa-bars "></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav w-100 justify-content-end mx-3 ">
+              <li class="nav-item text-white font-bold">
+                <a class="nav-link text-white"href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Images</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contact</a>
+              </li>
+           
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Container -->
+    <br><br><br>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- nav-tab -->
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#signup"  data-bs-toggle="tab">Signup</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-bs-toggle="tab" href="#login">Login</a>
+                    </li>
+                  </ul>  
+               
+                <!-- nav-panes -->
+                  <div class="tab-content">
+                    <div class="tab-pane active container mt-3" id="signup">
+                        <form>
+                            <input type="text" placeholder="Fullname" class="form-control mb-3">
+                            <input type="text" placeholder="Hotel Name" class="form-control mb-3">
+                            <input type="text" placeholder="Number of Rooms" class="form-control mb-3">
+                            <input type="Email" placeholder="Email" class="form-control mb-3">
+                            <input type="Password" placeholder="Password" class="form-control mb-3">
+                            <input type="number" placeholder="Number" class="form-control mb-3">
+                            <button class="btn btn-primary w-100">Submit</button>
+                        </form>
+                    </div>
+                    <div class="tab-pane active container mt-3" id="login">
+                        <form>
+                            <input type="Email" placeholder="Email" class="form-control mb-3">
+                            <input type="Password" placeholder="Password" class="form-control mb-3">
+                            <input type="number" placeholder="Number" class="form-control mb-3">
+                            <button class="btn btn-primary w-100">Login</button>
+                        </form>
+                    </div>
+                  </div>
+
+            </div>
+            <div class="col-md-6"></div>
         </div>
     </div>
 
