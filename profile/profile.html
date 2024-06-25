@@ -81,8 +81,10 @@
                                         <th>Room Number</th>
                                         <th>Full Name</th>
                                         <th>Checking Date</th>
+                                        <th>Checkout</th>
                                         <th>Total People</th>
-                                        <th>Notice</th>
+                                        <th>Mobile</th>
+                                        <th>Price</th>
                                         <th>Registered At</th>
                                         <th>Action</th>
                                     </tr>
@@ -94,31 +96,12 @@
                                         <td>15</td>
                                         <td>Amit Kumar</td>
                                         <td>24-06-2024</td>
-                                        <td>5</td>
-                                        <td>BreakFast included</td>
-                                        <td>12-05-2024</td>
-                                        <td>
-                                            <button class=" p-1 px-2 btn btn-primary">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
-                                            <button class=" p-1 px-2 btn btn-info">
-                                                <i class="fa fa-check"></i>
-                                            </button>
-                                            <button class=" p-1 px-2 btn btn-danger">
-                                                <i class="fa fa-trash"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Montreal</td>
-                                        <td>15</td>
-                                        <td>Amit Kumar</td>
                                         <td>24-06-2024</td>
                                         <td>5</td>
+                                        <td>4387229616</td>
+                                        <td>1500</td>
                                         <td>BreakFast included</td>
-                                        <td>12-05-2024</td>
-                                        <td>
+                                        <td class="no-wrap">
                                             <button class=" p-1 px-2 btn btn-primary">
                                                 <i class="fa fa-edit"></i>
                                             </button>
@@ -130,48 +113,7 @@
                                             </button>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Montreal</td>
-                                        <td>15</td>
-                                        <td>Amit Kumar</td>
-                                        <td>24-06-2024</td>
-                                        <td>5</td>
-                                        <td>BreakFast included</td>
-                                        <td>12-05-2024</td>
-                                        <td>
-                                            <button class=" p-1 px-2 btn btn-primary">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
-                                            <button class=" p-1 px-2 btn btn-info">
-                                                <i class="fa fa-check"></i>
-                                            </button>
-                                            <button class=" p-1 px-2 btn btn-danger">
-                                                <i class="fa fa-trash"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Montreal</td>
-                                        <td>15</td>
-                                        <td>Amit Kumar</td>
-                                        <td>24-06-2024</td>
-                                        <td>5</td>
-                                        <td>BreakFast included</td>
-                                        <td>12-05-2024</td>
-                                        <td>
-                                            <button class=" p-1 px-2 btn btn-primary">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
-                                            <button class=" p-1 px-2 btn btn-info">
-                                                <i class="fa fa-check"></i>
-                                            </button>
-                                            <button class=" p-1 px-2 btn btn-danger">
-                                                <i class="fa fa-trash"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
+                                  
                                 </tbody>
                             </table>
                         </div>
@@ -198,50 +140,51 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5>Registraion From</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="b-modal-close-btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-4">
-                    <form class="registration-from">
-                        <input type="text" class="mb-3 form-control" placeholder="Location">
+                    <form class="booking-from">
+                        <input name="location" type="text" class="mb-3 form-control" placeholder="Location">
                         <div class="row mb-3">
                             <div class="col-md-6">
-                                 <input type="text" class="mb-3 form-control" placeholder="First name">
+                                 <input name="frirstName" type="text" class="mb-3 form-control" placeholder="First name">
                             </div>
                             <div class="col-md-6">
-                                 <input type="text" class="mb-3 form-control" placeholder="Last Name">
+                                 <input name="lastName" type="text" class="mb-3 form-control" placeholder="Last Name">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <div class="col-md-6">
-                                 <input type="text" class="mb-3 form-control" placeholder="Room Number">
+                                 <input name="roomNumber" type="text" class="mb-3 form-control" placeholder="Room Number">
                             </div>
                             <div class="col-md-6">
-                                 <input type="text" class="mb-3 form-control" placeholder="Total People">
+                                 <input name="totalPeople" type="text" class="mb-3 form-control" placeholder="Total People">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <div class="col-md-6">
                                  <label for="">Check in Date</label>
-                                 <input type="date" class="mb-3 form-control">
+                                 <input name="checkInDate" type="date" class="mb-3 form-control">
                             </div>
                             <div class="col-md-6">
                                 <label for="">Check Out Date</label>
-                                 <input type="date" class="mb-3 form-control">
+                                 <input name="checkOutDate" type="date" class="mb-3 form-control">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <div class="col-md-6">
-                                 <input type="number" class="mb-3 form-control" placeholder="Price">
+                                 <input name="price" type="number" class="mb-3 form-control" placeholder="Price">
                             </div>
                             <div class="col-md-6">
-                                 <input type="number" class="mb-3 form-control" placeholder="Mobile">
+                                 <input name="mobile" type="number" class="mb-3 form-control" placeholder="Mobile">
                             </div>
                         </div>
                         <div class="row mb-3">
-                                 <textarea  class="mb-3 form-control" placeholder="Notice"></textarea>
+                                 <textarea name="notice" class="mb-3 form-control" placeholder="Notice"></textarea>
                         </div>
                         <div class="row mb-3">
-                            <button class="btn action-btn text-white fw-bold">Register</button>
+                            <button type="submit" class="btn action-btn text-white fw-bold">Register</button>
+                            <button type="button" class="btn d-none bg-danger text-white fw-bold">Update</button>
                         </div>
                     </form>
                 </div>
