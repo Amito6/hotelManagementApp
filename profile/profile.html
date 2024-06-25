@@ -193,8 +193,8 @@
 
     <!-- Start modal coding -->
 
-    <div class="modal" id="registration-modal">
-        <div class="modal-dialog modal-lg">
+    <div class="modal animate__animated animate__zoomIn" id="registration-modal">
+        <div class="modal-dialog modal-md ">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5>Registraion From</h5>
@@ -221,19 +221,27 @@
                         </div>
                         <div class="row mb-3">
                             <div class="col-md-6">
-                                 <input type="text" class="mb-3 form-control" placeholder="Checkin Date">
+                                 <label for="">Check in Date</label>
+                                 <input type="date" class="mb-3 form-control">
                             </div>
                             <div class="col-md-6">
-                                 <input type="text" class="mb-3 form-control" placeholder="Check Out Date">
+                                <label for="">Check Out Date</label>
+                                 <input type="date" class="mb-3 form-control">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <div class="col-md-6">
-                                 <input type="text" class="mb-3 form-control" placeholder="Price">
+                                 <input type="number" class="mb-3 form-control" placeholder="Price">
                             </div>
                             <div class="col-md-6">
-                                 <input type="text" class="mb-3 form-control" placeholder="Total People">
+                                 <input type="number" class="mb-3 form-control" placeholder="Mobile">
                             </div>
+                        </div>
+                        <div class="row mb-3">
+                                 <textarea  class="mb-3 form-control" placeholder="Notice"></textarea>
+                        </div>
+                        <div class="row mb-3">
+                            <button class="btn action-btn text-white fw-bold">Register</button>
                         </div>
                     </form>
                 </div>
