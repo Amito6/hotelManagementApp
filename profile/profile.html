@@ -23,13 +23,223 @@
             <ul class="navbar-nav w-100 justify-content-end mx-3 ">
                 <div class="input-group w-50 mx-5">
                     <input type="search" class="form-control" placeholder="Search By Name, Email, Room Number...">
-                    <span class="input-group-text text-white btn fw-bold ">Search</span>
+                    <span class="input-group-text text-white btn action-btn fw-bold ">Search</span>
                 </div>
-                <button class=" logout-btn btn text-white shadow-lg bg-light fw-bold"><i class="fa-solid fa-right-from-bracket"></i>&nbsp;Logout</button>
+                <button class=" logout-btn  action-btn btn text-white shadow-lg bg-light fw-bold"><i class="fa-solid fa-right-from-bracket"></i>&nbsp;Logout</button>
             </ul>
           </div>
         </div>
     </nav>
+    <br><br>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- nav-tab -->
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#booking"  data-bs-toggle="tab">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-bs-toggle="tab" href="#inhouse">Inhouse</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " data-bs-toggle="tab" href="#archieve">Archieve</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-bs-toggle="tab" href="#cashier">Cashier</a>
+                    </li>
+                  </ul>  
+               
+                <!-- nav-panes -->
+                  <div class="tab-content">
+                    <div class="tab-pane active w-100 container mt-3" id="booking">
+                        <div class="my-5 row">
+                            <div class="col-md-4 text-center">
+                                <button 
+                                data-bs-toggle="modal" data-bs-target="#registration-modal"
+                                class="btn action-btn  px-4 text-white fw-bold ">Register</button>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <button 
+                                data-bs-toggle=""
+                                class="btn action-btn  px-4 text-white fw-bold">Print</button>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <button 
+                                data-bs-toggle=""
+                                class="btn action-btn  px-4 text-white fw-bold">Total booking</button>
+                            </div>
+                        </div>
+                        <div>
+                            <h1 class="mb-3">All Booking Data</h1>
+                            <table class="table table-striped text-center">
+                                <thead>
+                                    <tr>
+                                        <th>Sr No.</th>
+                                        <th>Location</th>
+                                        <th>Room Number</th>
+                                        <th>Full Name</th>
+                                        <th>Checking Date</th>
+                                        <th>Total People</th>
+                                        <th>Notice</th>
+                                        <th>Registered At</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Montreal</td>
+                                        <td>15</td>
+                                        <td>Amit Kumar</td>
+                                        <td>24-06-2024</td>
+                                        <td>5</td>
+                                        <td>BreakFast included</td>
+                                        <td>12-05-2024</td>
+                                        <td>
+                                            <button class=" p-1 px-2 btn btn-primary">
+                                                <i class="fa fa-edit"></i>
+                                            </button>
+                                            <button class=" p-1 px-2 btn btn-info">
+                                                <i class="fa fa-check"></i>
+                                            </button>
+                                            <button class=" p-1 px-2 btn btn-danger">
+                                                <i class="fa fa-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Montreal</td>
+                                        <td>15</td>
+                                        <td>Amit Kumar</td>
+                                        <td>24-06-2024</td>
+                                        <td>5</td>
+                                        <td>BreakFast included</td>
+                                        <td>12-05-2024</td>
+                                        <td>
+                                            <button class=" p-1 px-2 btn btn-primary">
+                                                <i class="fa fa-edit"></i>
+                                            </button>
+                                            <button class=" p-1 px-2 btn btn-info">
+                                                <i class="fa fa-check"></i>
+                                            </button>
+                                            <button class=" p-1 px-2 btn btn-danger">
+                                                <i class="fa fa-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Montreal</td>
+                                        <td>15</td>
+                                        <td>Amit Kumar</td>
+                                        <td>24-06-2024</td>
+                                        <td>5</td>
+                                        <td>BreakFast included</td>
+                                        <td>12-05-2024</td>
+                                        <td>
+                                            <button class=" p-1 px-2 btn btn-primary">
+                                                <i class="fa fa-edit"></i>
+                                            </button>
+                                            <button class=" p-1 px-2 btn btn-info">
+                                                <i class="fa fa-check"></i>
+                                            </button>
+                                            <button class=" p-1 px-2 btn btn-danger">
+                                                <i class="fa fa-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Montreal</td>
+                                        <td>15</td>
+                                        <td>Amit Kumar</td>
+                                        <td>24-06-2024</td>
+                                        <td>5</td>
+                                        <td>BreakFast included</td>
+                                        <td>12-05-2024</td>
+                                        <td>
+                                            <button class=" p-1 px-2 btn btn-primary">
+                                                <i class="fa fa-edit"></i>
+                                            </button>
+                                            <button class=" p-1 px-2 btn btn-info">
+                                                <i class="fa fa-check"></i>
+                                            </button>
+                                            <button class=" p-1 px-2 btn btn-danger">
+                                                <i class="fa fa-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                      
+                    </div>
+                    <div class="tab-pane  container mt-3" id="login">
+                        <form class="login-from">
+                            <input required type="Email" placeholder="Email" class="form-control mb-3">
+                            <input required type="Password" placeholder="Password" class="form-control mb-3">
+                            <button type="submit" class="btn btn-primary w-100">Login</button>
+                        </form>
+                    </div>
+                  </div>
+
+            </div>
+          
+        </div>
+    </div>
+
+    <!-- Start modal coding -->
+
+    <div class="modal" id="registration-modal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Registraion From</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form class="registration-from">
+                        <input type="text" class="mb-3 form-control" placeholder="Location">
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                 <input type="text" class="mb-3 form-control" placeholder="First name">
+                            </div>
+                            <div class="col-md-6">
+                                 <input type="text" class="mb-3 form-control" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                 <input type="text" class="mb-3 form-control" placeholder="Room Number">
+                            </div>
+                            <div class="col-md-6">
+                                 <input type="text" class="mb-3 form-control" placeholder="Total People">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                 <input type="text" class="mb-3 form-control" placeholder="Checkin Date">
+                            </div>
+                            <div class="col-md-6">
+                                 <input type="text" class="mb-3 form-control" placeholder="Check Out Date">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                 <input type="text" class="mb-3 form-control" placeholder="Price">
+                            </div>
+                            <div class="col-md-6">
+                                 <input type="text" class="mb-3 form-control" placeholder="Total People">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="./js/profile.js"></script>
 </body>
